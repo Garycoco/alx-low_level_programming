@@ -5,13 +5,10 @@
  */
 int main(void)
 {
-	char alph = 'a';
+	char alph;
 
-	while (alph <= 'z')
-	{
-		putchar(alph);
-		alph++;
-		putchar('\n');
-	}
+	for (alph = 'a'; alph <= 'z'; alph++)
+	putchar(alph);
+	putchar('\n');
 	return (0);
 }
