@@ -6,6 +6,7 @@
 int main(void)
 {
 	int num;
+
 	char alpha;
 	for (num = 48; num <= 57; num++)
 	putchar(num);
