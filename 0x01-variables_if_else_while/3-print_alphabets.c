@@ -1,13 +1,16 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main -Entry point
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 	char alph;
+	char low;
 
-	for (alph = 'a'; alph <= 'z'; alph++)
+	for (low = 'a'; low <= 'z'; low++)
+	putchar(low);
+	for (alph = 'A'; alph <= 'Z'; alph++)
 	putchar(alph);
 	putchar('\n');
 	return (0);
