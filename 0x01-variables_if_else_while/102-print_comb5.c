@@ -1,6 +1,7 @@
 #include <stdio.h>
-/*
- * main - create 2 pairs of numbers that do not repeat
+/**
+ * main - Prints all possible combinations of a pair of two
+ * numbers ranging from 0-99
  * Return: Always 0 (Success)
  */
 int main(void)
