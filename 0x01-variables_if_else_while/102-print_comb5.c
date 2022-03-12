@@ -1,7 +1,6 @@
 #include <stdio.h>
 /*
- * main - prints all possible combinations of two digit numbers
- * ranging from 0-99
+ * main - create 2 pairs of numbers that do not repeat
  * Return: Always 0 (Success)
  */
 int main(void)
