@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	print_square(10);
+	print_diagonal(20);
 	return (0);
 }
 

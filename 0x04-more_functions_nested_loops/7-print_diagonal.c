@@ -1,5 +1,4 @@
 #include "main.h"
-#include "main.c"
 
 /**
  * print_diagonal - draws a diagonal line
@@ -14,8 +13,18 @@ void print_diagonal(int n)
 {
 	if (n <= 0)
 	{
-		putchar('\n');
+		_putchar('\n');
 	}
 	else
 	{
-		int times = 0;
+		int times, space;
+
+		for (times = 1; times <= n; times++)
+		{
+			for (space = 1; space <= times; space++)
+			_putchar(' ');
+			_putchar('\\');
+			_putchar('\n');
+		}
+	}
+}
