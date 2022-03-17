@@ -3,11 +3,7 @@
 
 int main(void)
 {
-	char c;
-
-	printf("Enter a digit: ");
-	scanf("%c", &c);
-
-	printf("%d\n", _isdigit(c));
+	printf("%d\n", mul(5, 2));
+	printf("%d\n", mul(10, 10));
 }
 
