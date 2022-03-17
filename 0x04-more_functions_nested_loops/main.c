@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	printf("%d\n", mul(5, 2));
-	printf("%d\n", mul(10, 10));
+	print_line(0);
+	return (0);
 }
 
