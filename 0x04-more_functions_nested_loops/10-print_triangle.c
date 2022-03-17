@@ -16,13 +16,13 @@ void print_triangle(int size)
 	int hash;
 
 	if (size <= 0)
-	putchar('\n');
+	_putchar('\n');
 	for (y = 1; y <= size; y++)
 	{
 		for (x = 1; x <= (size - y); x++)
-		putchar(' ');
+		_putchar(' ');
 		for (hash = 1; hash <= y; hash++)
-		putchar('#');
-		putchar('\n');
+		_putchar('#');
+		_putchar('\n');
 	}
 }
