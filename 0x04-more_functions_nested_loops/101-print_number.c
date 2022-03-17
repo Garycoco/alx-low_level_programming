@@ -10,28 +10,28 @@
 
 void print_number(int n)
 {
-	unsigned int doubles, single, i = n;
-	double j = 1;
+	unsigned int doubles, single, i;
 
 	if (n == 0)
-	_putchar('0');
+	{
+	_putchar(45);
+	doubles = n * -1;
+	}
 	else
 	{
-		if (n < 0)
-		{
-			i = n * -1;
-			_putchar('-');
-		}
-		while (j <= i)
-		j *= 10;
-		doubles = j / 10;
+		doubles = n;
+	}
+	single = doubles;
+	i = 1;
 
-		while (doubles >= 1)
-		{
-			single = i / doubles;
-			_putchar(single + 0);
-			i = (i - (doubles * single));
-			doubles /= 10;
-		}
+	while (single > 9)
+	{
+		single /= 10;
+		i *= 10;
+	}
+
+	for (; i >= 1; i /= 10)
+	{
+		_putchar(((doubles / i) % 10) + 48);
 	}
 }
