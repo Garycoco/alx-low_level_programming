@@ -1,5 +1,4 @@
 #include "main.h"
-#include "main.c"
 
 /**
  * print_triangle - Prints a # triangle
