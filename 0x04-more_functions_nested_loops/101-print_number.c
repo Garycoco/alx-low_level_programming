@@ -28,7 +28,7 @@ void print_number(int n)
 
 		while (doubles >= 1)
 		{
-			single = i doubles;
+			single = i / doubles;
 			_putchar(single + 0);
 			i = (i - (doubles * single));
 			doubles /= 10;
