@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main mul - multiplies two given integer parameters
+ * mul - multiplies two given integer parameters
  *
  * Return: Always (0)
  *
