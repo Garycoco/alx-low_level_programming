@@ -12,7 +12,7 @@ void print_number(int n)
 {
 	unsigned int doubles, single, i;
 
-	if (n == 0)
+	if (n < 0)
 	{
 	_putchar(45);
 	doubles = n * -1;
