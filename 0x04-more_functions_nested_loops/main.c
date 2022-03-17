@@ -5,9 +5,9 @@ int main(void)
 {
 	char c;
 
-	printf("Enter a character: ");
+	printf("Enter a digit: ");
 	scanf("%c", &c);
 
-	printf("%d\n", _isupper(c));
+	printf("%d\n", _isdigit(c));
 }
 
