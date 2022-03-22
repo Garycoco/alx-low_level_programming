@@ -6,7 +6,7 @@
  *
  * Return: void
  *
- * @*n: A pointer to an int parameter
+ * @n: A pointer to an int parameter
  */
 
 void reset_to_98(int *n)
