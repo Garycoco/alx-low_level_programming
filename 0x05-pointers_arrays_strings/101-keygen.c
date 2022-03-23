@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 
 /*
  * File: 101-keygen.c
