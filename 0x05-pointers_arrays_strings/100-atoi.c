@@ -8,7 +8,7 @@
  * @s: a character parameter
  */
 
-int _atoic(char *s)
+int _atoi(char *s)
 {
 	short boolean;
 	int i, minus, result;
