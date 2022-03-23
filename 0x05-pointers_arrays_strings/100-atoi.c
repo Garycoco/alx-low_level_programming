@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _atoic - converts a string to an integer
+ * _atoi - converts a string to an integer
  *
  * Return: the converted string
  *
  * @s: a character parameter
  */
 
-int _atoic(char *s)
+int _atoi(char *s)
 {
 	short boolean;
 	int i, minus, result;
@@ -16,7 +16,7 @@ int _atoic(char *s)
 	i = minus = result = boolean = 0;
 	minus = -1;
 
-	while (s[i] == '\0')
+	while (s[i] != '\0')
 	{
 		if (s[i] == '-')
 			minus *= -1;
