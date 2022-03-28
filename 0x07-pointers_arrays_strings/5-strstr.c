@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * char *_strstr(char *haystack, char *needle) - 
- * locates a substring
+ * char *_strstr - locates a substring
  *
  * @haystack: character parameter
  * @needle: a character parameter
@@ -12,7 +11,9 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int a = 0, b = 0;
+	int a = 0;
+	int b = 0;
+
 	while (haystack[a])
 	{
 		while (needle[b])
@@ -31,5 +32,4 @@ char *_strstr(char *haystack, char *needle)
 		a++;
 	}
 	return ('\0');
-}
 }
