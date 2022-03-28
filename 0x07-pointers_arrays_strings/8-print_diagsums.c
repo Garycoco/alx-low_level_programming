@@ -8,7 +8,7 @@
  * Return: void
  *
  * @a: an integer parameter
- * @b: an integer parameter
+ * @size: an integer parameter
  */
 
 void print_diagsums(int *a, int size)
