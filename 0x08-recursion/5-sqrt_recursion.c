@@ -28,14 +28,14 @@ int _sqrt_recursion(int n)
 
 int actual_sqrt_recursion(int i, int j)
 {
-	if (i * i > n)
+	if (i * i > j)
 	{
 		return (-1);
 	}
-	if (i * i == n)
+	if (i * i == j)
 	{
 		return (i);
 	}
 
-	return (actual_sqrt_recursion(n, i + 1));
+	return (actual_sqrt_recursion(j, i + 1));
 }
