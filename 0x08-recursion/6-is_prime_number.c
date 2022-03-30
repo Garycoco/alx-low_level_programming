@@ -1,41 +1,47 @@
 #include "main.h"
 
 /**
- * is_prime_number - checks for prime numbers
+ * is_prime - checks for prime numbers
  *
  * Return: 1 if prime and 0 if not
  *
  * @n: an integer parameter
+ * @divisor: integer variable
  */
 
-int is_prime_number(int n)
+int is_prime(int n, int divisor)
 {
-	if (n <= 1)
+	if (n == divisor)
+	{
+		return (i);
+	}
+	if (n % divisor == 0)
 	{
 		return (0);
 	}
-	return (actual_prime(n, n - 1));
+	return (is_prime(n, divisor + 1));
 }
 
 /**
- * actual_prime - finds the prime number
+ * is_prime_number - finds the prime number
  *
  * Return: the prime number
  *
  * @n: integer variable
- * @y: integer variable
  */
 
-int actual_prime(int n, int y)
+int is_prime_number(int n)
 {
-	if (i == 1)
-	{
-		return (1);
-	}
-	if (n % 1 == 0 && i > 0)
+	int divisor = 3;
+
+	if (n % 2 == 0 || n < 2)
 	{
 		return (0);
 	}
+	if (n == 2)
+	{
+		return (1);
+	}
 
-	return (actual_prime(n, i - 1));
+	return (is_prime_number(n, divisor));
 }
