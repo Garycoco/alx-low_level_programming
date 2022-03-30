@@ -14,7 +14,7 @@ int is_prime(int n, int divisor)
 	if (n == divisor)
 	{
 		return (1);
-	}i
+	}
 	if (n % divisor == 0)
 	{
 		return (0);
