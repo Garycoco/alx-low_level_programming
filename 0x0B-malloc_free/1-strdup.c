@@ -3,33 +3,51 @@
 #include "main.h"
 
 /**
- * _strdup - returns a pointer to a newly allocated space in memory,
+ * _stlen - returns string length
+ *
+ * @s: string
+ *
+ * Return: string length
+ */
+
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (*s)
+	{
+		s++;
+		len++;
+	}
+	return (len);
+}
+
+/**
+ * _strdup - returns a pointer to an allocated space in memory
  * which contains a copy of the string given as a parameter
  *
- * @str: string to duplicate
+ * @str: string to be copied
  *
- * Return: pointer to duplicated string in allocated memory
+ * Return: copied string
  */
 
 char *_strdup(char *str)
 {
-	char *duplicate_str;
-	int i = 0, len = 0;
+	char *copy, *_copy;
 
-	if (str == NULL)
-	return (NULL);
-	while (*(str + 1))
-	len++, i++;
-	len++;
-	duplicate_str = malloc(sizeof(char) * len);
+	if (!str)
+		return (NULL);
+	copy = malloc((_strlen(str) + 1) * sizeof(char));
+	if (!copy)
+		return (NULL);
+	_copy = copy;
 
-	if (duplicate_str == NULL)
-	return (NULL);
-	i = 0;
-	while (i < len)
+	while (*str)
 	{
-		*(duplicate_str + i) = *(str + i);
-		i++;
+		*_copy = *str;
+		str++;
+		_copy++;
 	}
-	return (duplicate_str);
+	*_copy = '\0';
+	return (copy);
 }
