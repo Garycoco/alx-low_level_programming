@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * _stlen - returns string length
+ * _strlen - returns string length
  *
  * @s: string
  *
