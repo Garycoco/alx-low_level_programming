@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * string_concat - concatenates two strings
+ * string_nconcat - concatenates two strings
  *
  * @s1: The first string
  * @s2: Second string
@@ -12,7 +12,7 @@
  *
  */
 
-char *string_concat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *con;
 	unsigned int len = n, i;
