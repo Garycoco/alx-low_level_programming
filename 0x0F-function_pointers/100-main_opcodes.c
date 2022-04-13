@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	for (1 = 0; i < j; i++)
+	for (i = 0; i < j; i++)
 	{
 		printf("%02hhx", *((char *)main + i));
 		if (i < n - 1)
