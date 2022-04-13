@@ -5,7 +5,7 @@
  *
  * @a: first integer
  * @b: second integer
- * 
+ *
  * Return: sum of two numbers
  *
  */
