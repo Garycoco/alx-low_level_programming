@@ -8,7 +8,7 @@
  * @cmp: pointer to the function to be used to compare
  *
  * Return: index of the first element, -1 if size <= 0
- * or if no element matches 
+ * or if no element matches
  *
  */
 
