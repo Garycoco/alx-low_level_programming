@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	for (i = 0; i < j; i++)
 	{
 		printf("%02hhx", *((char *)main + i));
-		if (i < n - 1)
+		if (i < j - 1)
 		{
 			printf(" ");
 		}
