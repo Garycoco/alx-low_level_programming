@@ -11,7 +11,7 @@ void print_all(const char * const format, ...);
 /**
  * print_char - prints a character
  *
- * @format: list of types of arguments passed to the function
+ * @arg: list of types of arguments passed to the function
  *
  * Return: void
  *
