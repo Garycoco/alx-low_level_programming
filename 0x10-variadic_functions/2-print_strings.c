@@ -13,8 +13,10 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list va;
-	unsigned int i = 0;
+	unsigned int i;
 	char *str;
+
+	va_start(va, n);
 
 	for (i = 0; i < n; i++)
 	{
