@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-			printf("%c", (char) ca_arg(va, int));
+			printf("%c", (char) va_arg(va, int));
 			break;
 
 			case 'i':
@@ -41,12 +41,12 @@ void print_all(const char * const format, ...)
 
 			case 's':
 			str = va_arg(va, char*);
-			if(str == NULL)
+			if (str == NULL)
 			{
 				printf("(nil)");
 				break;
 			}
-			printf("%s", st);
+			printf("%s", str);
 			break;
 		}
 		if ((format[s] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's' && 
