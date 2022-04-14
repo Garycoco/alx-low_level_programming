@@ -2,8 +2,14 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 
+void print_char(va_list arg);
+void print_int(va_list arg);
+void print_float(va_list arg);
+void print_string(va_list arg);
+void print_all(const char * const format, ...);
+
 /**
- * print_all - prints anything
+ * print_char - prints a character
  *
  * @format: list of types of arguments passed to the function
  *
@@ -66,7 +72,7 @@ void print_string(va_list arg)
 }
 
 /**
- * print_all - Prints anything, followed by a new line.
+ * print_all - Prints anything
  * @format: A string of characters representing the argument types.
  * @...: A variable number of arguments to be printed.
  *
