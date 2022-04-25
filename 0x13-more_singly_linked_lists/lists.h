@@ -3,12 +3,14 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
- * struct listsint_s - singly linked lists
- * @n: integer variable
+ * struct listint_s - singly linked lists
+ * @n: integer
  * @next: Points to the next node
  *
+ * Description: singly linked lists node structure project
  */
 
 typedef struct listint_s
